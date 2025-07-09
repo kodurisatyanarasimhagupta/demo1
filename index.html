@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Table Example</title>
+  <style>
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table border="1" cellpadding="8" cellspacing="0" summary="Sample data table">
+    <caption>Employee Information</caption>
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Department</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td headers="ID">1</td>
+        <td headers="Name">Alice</td>
+        <td headers="Department">HR</td>
+        <td headers="Email">alice@example.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob</td>
+        <td>Marketing</td>
+        <td>bob@example.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Charlie</td>
+        <td>Development</td>
+        <td>charlie@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
